@@ -1,6 +1,6 @@
 # 30days30sites
 
-30days30sites is a challenge created by Beatrice Bock (Tris) @code413. 
+#30days30sites is a challenge created by Beatrice Bock (Tris) @code413. 
 
 In this challenge participants receive 30 email prompts for 30 days. Each day they get to create a website. Each promote includes an example website and a tutorial as a guideline to follow. Websites could be as simple or as complex depending on participant’s choice and level of expertise. 
 
