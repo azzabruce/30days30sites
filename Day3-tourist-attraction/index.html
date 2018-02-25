@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title> Kasala-Tourist Attraction </title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato||Syncopate" rel="stylesheet">
+    <link rel="stylesheet"  href="css/styles.css">
+</head>
+<body>
+    
+<!--  navbar  -->
+    
+    <div class="site-navbar">
+            <div class="nav-header">
+                <div class="logo">
+                    <a href="index.html" class="site-logo">Kasala</a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                 <label class="icon" for="nav-check">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                 </label>
+            </div>
+            <input type="checkbox" id="nav-check">
+            <div id="navbar">
+                <a   href="index.html">Home</a>
+                <a  href="#section2">Things To Do</a>
+                <a  href="#places-to-go">Places To Go</a>
+                <a  href="#site-map">Map</a>
+                
+            </div>
+            
+        
+    </div>
+    
+    <div class="slideShow-container">
+        
+        <!-- Place all desired images inside the slideShow container -->
+        
+        <div class="slides fade">
+            <img src="images/altaka.jpg" class="img" alt="Beautiful view of the most famous mountain in Kasala">
+        </div>
+        
+        <div class="slides fade">
+            <img src="images/7asan-mosque.jpg" class="img" alt="Sidi Al Hassan Mosque near Al taka mountain">
+        </div>
+        
+        <div class="slides fade">
+            <img src="images/beautiful.jpg" class="img" alt="Young sheep farmer">
+        </div>
+        
+        <div class="slides fade">
+            <img src="images/kasala.jpg" class="img" alt="A nother view of Sidi Al Hassan Mosque, beautiful architecture">
+        </div>
+        
+        <!-- next and previous arrow -->
+        
+        <a class="prev" onclick="nextSlide(-1)">&#60;</a>
+        <a class="next" onclick="nextSlide(1)">&#62;</a>
+        
+        <!-- create dots at the bottom of the slideshow Carousel-->
+        
+        
+    </div>
+
+    
+    <div class="slideshow-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    <span class="sections-divider"></span>
+    
+    <div class="things-to-do">
+        
+        <h2 id="section2">Things To Do</h2>
+        <span class="line-break"></span>
+        <div class="things-to-do__section coffee">
+            
+             <div class="things-to-do__p1">
+                 <p>Aromatic, a, cultivar seasonal acerbic cup french press medium viennese filter barista grounds. At, cultivar, body sweet redeye java, irish seasonal percolator doppio cup foam. Variety mocha qui breve percolator mocha breve con panna instant. Aged americano, doppio cappuccino extraction coffee strong grounds. Strong breve grinder extra so kopi-luwak trifecta. Aromatic, a, cultivar seasonal acerbic cup french press medium viennese filter barista grounds. Variety mocha qui breve percolator mocha breve con panna instant.
+                 </p>
+                  <a href="#things-to-do"><button class="things-to-do__btn">More</button>
+                </a>
+            </div>
+            
+            <div class ="things-to-do__section1-img">
+                 <img src="images/jabna.jpg"  alt="traditional coffee display in Kasala">
+            </div>
+           
+                
+        </div>
+        
+        
+        <div class="things-to-do__section dance">
+            
+            <div class ="things-to-do__section1-img">
+                 <img src="images/traditional-dance.jpg"  alt="women dancing">
+            </div>
+            
+            
+            <div class="things-to-do__p2">
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis enim vitae metus rutrum hendrerit. Vivamus eu suscipit nibh. Pellentesque tincidunt velit at lacus ullamcorper porttitor. Nullam vitae convallis leo. Quisque interdum tempus enim vel vehicula. Mauris nec aliquet eros. Donec ex leo, rutrum rutrum elementum id, imperdiet vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis enim vitae metus rutrum hendrerit. Vivamus eu suscipit nibh. Pellentesque tincidunt velit at lacus ullamcorper porttitor.</p>
+                <a href="#things-to-do"><button class="things-to-do__btn">More</button>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <span class="sections-divider"></span>
+    
+    <div id="places-to-go">
+            <h2 id="section3">Places To Go</h2>
+        <span class="line-break"></span>
+        <div class="places-to-go__sections">
+        
+            <div class="places-to-go__section1">
+                <img src="images/7adara.jpg" alt="Tomb Of El Sayed El Hassan El Mergani" height="400" width="500">
+                <br>
+                <span class="places-to-go__section-header">Sidi Al-Hassan Mosque
+                </span><br>
+                <div class="places-to-go__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis nisl nulla, eget sollicitudin tellus hendrerit et. Nam sagittis ultricies accumsan. Nam aliquet eget tellus sed ultricies. Praesent tempor, sem id placerat venenatis, urna lorem vestibulum neque, non malesuada elit lorem ac urna. Nunc in massa orci. Integer ultrices quam id consequat aliquet. Vivamus rutrum dignissim auctor. Cras porttitor, ligula non dapibus mattis, ipsum enim dapibus metus, a mollis ante lacus in ipsum. Vestibulum tellus sem, interdum id mauris sed, eleifend maximus risus. 
+                </div><br>
+                <a href="#places-to-go"><button class="places-to-go__btn">More</button>
+                </a>
+            </div>
+       
+        <div class="places-to-go__section2">
+                <img src="images/kasala2.jpg"  alt="side view of sidid alhassan mosque and mountains" height="400" width="475"><br>
+                <span class="places-to-go__section-header"> Al-Taka Mountain
+                </span><br>
+                <div class="places-to-go__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis nisl nulla, eget sollicitudin tellus hendrerit et. Nam sagittis ultricies accumsan. Nam aliquet eget tellus sed ultricies. Praesent tempor, sem id placerat venenatis, urna lorem vestibulum neque, non malesuada elit lorem ac urna. Nunc in massa orci. Integer ultrices quam id consequat aliquet. Vivamus rutrum dignissim auctor. Cras porttitor, ligula non dapibus mattis, ipsum enim dapibus metus, a mollis ante lacus in ipsum. Vestibulum tellus sem, interdum id mauris sed, eleifend maximus risus. 
+                </div><br>
+                <a href="#places-to-go"><button class="places-to-go__btn">More	</button>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <span class="sections-divider"></span>
+    <div id="site-map">
+        <h2 id="section4">City's Map</h2>
+        <span class="line-break"></span>
+    
+        <iframe width="100%" height="500" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=Kassala+Sudan&key=AIzaSyDRPYTeENnKY3yYU2h--PExROyAlcoSriw" allowfullscreen></iframe>
+    </div>
+    
+    
+<!--
+    <div class="footer">
+    </div>
+-->
+    
+     
+    
+    <script src="js/main.js" type=text/javascript></script>
+   
+    
+</body>
+ <footer id="footer">
+
+     <div id="section5">
+     
+        <div class="socialMedia">
+              
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/azzabruce/" target="_blank"  title="LINKEDIN"><i class="fab fa-linkedin"></i></a>
+            </div>
+              
+            <div class="github">
+                <a href="https://www.github.com/azzabruce" target="_blank"    title="GITHUB"><i class="fab fa-github"></i></a>
+            </div>
+              
+            <div class="freecodecamp">
+                <a href="https://www.freecodecamp.com/azzabruce" target="_blank"  title="FCC"><i class="fab fa-free-code-camp"></i></a>
+            </div>
+              
+            <div class="codepen">
+                <a href="https://codepen.io/azzab/" target="_blank"   title="CODEPEN"><i class="fab fa-codepen"></i></a>
+            </div>
+          
+        </div>
+         <div class="copy-rights">
+                <p >  &#169 2017 AZZABRUCE. ALL RIGHTS RESERVED.</p>
+        </div>
+      
+     </div>
+     
+     
+ </footer>
+</html>
