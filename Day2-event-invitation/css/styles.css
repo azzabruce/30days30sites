@@ -1,0 +1,444 @@
+/*
+COLORS:
+
+red: #E6212D
+white: #FFFDFE
+yellow:#FECA30
+blue: #346DB2
+
+*/
+*, 
+*:before, 
+*:after{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;  
+}
+
+html{
+  height: 65%;
+    
+}
+
+body{
+    box-sizing: border-box;
+    max-height: 100%;
+    /*background-color:#FECA30;*/
+ 
+}
+
+/* site container*/
+
+.site-container{
+    
+     /* The height needs to be set to a fixed value for the effect to work.
+     * 100vh is the full height of the viewport. */
+    
+    height:100vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    
+    overflow-x: hidden;
+    
+     /* Enable scrolling on the page. */
+    overflow-y: auto;
+    
+    /* defining the prespective property allows us to change the perspective oh how 3D CHILD element gets the perspective view */
+
+    perspective:2px;
+      
+}
+/*------ Site Navbar-----*/
+
+.site-navbar{
+    
+    display:block;
+    position:relative;
+    text-align: center;
+    background-color:#FECA30;
+    justify-content:  center;
+    margin-bottom: 0;
+}
+
+
+.navbar__section-links{
+    
+     display: inline-block;
+     text-decoration: none;
+    padding: 20px;
+     font-size: 50px;
+     font-family: 'Risque', cursive;
+     color:#346DB2;  
+  
+   
+}
+
+
+.site-navbar__check{
+    display:none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+ 
+}
+
+a.current{
+    
+    color:#E6212D;
+ 
+}
+
+a:hover{
+   color: #1c5596;
+}
+
+/* home page invitation section */
+
+
+.site-container__event-section{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+
+.img1
+
+{
+    background-attachment: fixed;
+    background-image: /*-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(40,180,133,0.8)))*/-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(255, 0, 0, .8))), url(ian.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+}
+
+/* site-container__event-section-content*/
+
+h1 {
+    font-family: 'Risque', cursive;
+    font-size: 5rem;
+    color:#FECA30;
+    text-transform: uppercase;
+    text-shadow: .1rem .4rem #346DB2;
+    
+
+}
+
+.site-container__event-section-content{
+    position: absolute;
+    top:10rem;
+}
+
+h3{
+    font-family: 'Risque', cursive;
+    font-size: 2rem;
+    color:#FECA30;
+    text-transform: uppercase;
+    text-shadow: .1rem .1rem #346DB2;
+}
+
+.btn-animated{
+    border: .5rem solid #FECA30;
+    border-radius:20rem;
+    width:8rem;
+    background-color:  #FECA30;
+    font-size:1.5rem;
+    font-family: 'Risque', cursive;
+    margin-top: 1.5rem;
+}
+.site-container__event-date,
+.site-container__event-title {
+    animation-name: slidesInRight;
+    animation-duration: 1.5s;
+}
+.site-container__event-location,
+.site-container__event-purpose {
+    animation-name: slidesInLeft;
+    animation-duration: 1.5s;
+}
+
+
+/*about Ian section*/
+.about-section{
+    
+    position: relative;
+    font-family: 'Risque', cursive;
+    color:#000;
+    line-height: 3rem;
+    min-height: 100%;
+    text-align: justify;
+}
+
+.about-section__title-img{
+    
+    justify-content: center;
+    text-align: center;
+    font-size: 10rem; 
+    margin: auto;
+    color: #FECA30;
+    text-shadow: .2rem .2rem #346DB2;
+    padding: 20rem;
+  
+     
+}
+
+.about-section__img{
+    position: relative;
+    display: inline-block;
+    height: 4rem;
+    margin:1rem;
+  
+}
+
+.about-section__title-img span{
+    background-color: rgba(255, 0, 0, .8);
+   
+}
+
+.about-section__ian{
+    font-size: 1.5rem;
+    text-align: center;
+    
+    
+}
+
+.about-section__paragraph2{
+    padding: 5rem;
+    text-align: justify;
+    background-color:  rgba(255, 0, 0, .8);
+}
+
+
+.bg-img1, 
+.bg-img2, 
+.bg-img3{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.bg-img1{
+    background-image: url(ian-prodigy.jpg);
+    min-height: 100%;
+}
+.bg-img2{
+    background:#fff;
+    min-height: 400px;
+}
+.bg-img3{
+    background-image: url(ian-sis.jpg);
+    min-height: 600px;
+}
+
+/*RSVP page---form styles*/
+
+
+.form-container {   
+    
+    display:block;
+    background:-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(255, 0, 0, .8))), url(ian-3yrs.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: 'Risque', cursive;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FECA30;
+    font-weight: 700;
+        
+        
+}
+.form h3{
+    
+    position: relative;
+    margin-bottom: 1rem;
+    margin-left: 3.5rem;
+    color: #FECA30;
+    text-shadow: none;
+    text-align: center;
+    align-content: center;
+}
+
+.form {
+    display:inline-block;
+    background-color: #346DB2;
+    align-content: center;
+    margin: auto;
+    padding: 100px;
+    border-radius: 10px;
+    margin-top: 5rem;
+    
+
+}
+.form-control{
+    margin-left:10px;
+    text-transform:capitalize;
+    
+    
+}
+
+.send{
+    
+    margin: 10px;
+    text-transform:uppercase;
+    font-weight:bold;
+    color: #FECA30;
+}
+
+
+.send:hover{
+    color: #346DB2;
+}    
+
+
+/*----Zparty------*/
+.party-container{
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 253, 254,0.8)), to(rgba(255, 0, 0, .8)));
+    
+   
+}
+
+#zParty{
+    
+    display:grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-rows: 25rem;
+    padding:2rem;
+    
+}
+#zParty > div {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zParty > div > img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.party-info{
+    
+    text-align: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin:3rem;
+    
+    
+}
+.party-info p{
+    
+    font-weight: 700;
+    line-height: 3rem;
+    font-family: 'Risque', cursive;
+    
+}
+.party-info h2 {
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    font-family: 'Risque', cursive;
+    font-size: 2.5rem;
+    color:#FECA30;
+    text-transform: uppercase;
+    text-shadow: .1rem .1rem #346DB2;
+}
+
+/*site footer*/
+.site-footer__copy-rights{
+    position: relative;
+    background-color:#FECA30;
+
+
+    
+}
+
+.author{
+    border: 1px red solid;
+    position: absolute;
+    margin:auto;
+    text-align:center;
+    color:#346DB2;
+    font-family: 'Risque', cursive;
+
+}
+
+
+
+/* Invitation title animation*/
+
+@keyframes slidesInRight{
+    
+    0%{
+         opacity: 0; 
+         transform:translateX(-10rem);
+        
+      }
+    
+    80%{
+        
+         transform:translateX(2rem);
+       }
+    
+    100%{
+         transform:translateX(0rem);
+        
+    }
+}
+@keyframes slidesInLeft{
+    
+    0%{
+         opacity: 0; 
+         transform:translateX(10rem);
+        
+      }
+    
+    80%{
+        
+         transform:translateX(-2rem);
+       }
+    
+    100%{
+         transform:translateX(0rem);
+        
+    }
+}
+
+@media only screen and (max-width:600px){
+    
+    .about-section__title-img > span{
+        position: relative;
+        display: inline-block;
+        
+    
+    }
+        
+     .about-section__ian{
+        font-size: 1rem;
+        text-align: center;
+    
+}   
+    .about-section__title-img{
+        justify-content: center;
+        text-align: center;
+        font-size: 5rem; 
+        margin: auto;
+        color: #FECA30;
+        text-shadow: .2rem .2rem #346DB2;
+        padding: 7rem;
+  
+     } 
+   
+    
+}
