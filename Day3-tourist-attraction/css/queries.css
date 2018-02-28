@@ -1,0 +1,541 @@
+/* --------------for small tablet to big tablet-------- */
+
+
+@media only screen and 
+    (max-width:1200px) {
+    
+  
+    .prev{
+        
+        
+        left:7%;
+    }
+    
+    .next{
+    
+       
+        right:7%;
+    }
+         
+
+/*-------Sections divider------ */
+        
+        
+        
+.sections-divider{
+         width:80%;
+         margin-top: 30px;  
+         margin-bottom: 30px;
+    
+            
+}
+        
+/*-------Things To Do--------- */     
+        
+ .things-to-do{
+     padding:20px;
+    margin-top: 0;
+     margin-bottom: 60px;
+} 
+      
+        
+.things-to-do__section{
+    flex-grow: 1 ;
+    flex-shrink: 1;
+    align-content: center;
+    width:auto;
+    padding:20px;
+    margin: 0;
+    
+   
+}
+        
+    .things-to-do__p1,
+     .things-to-do__p2{
+         
+        text-align: justify;
+        line-height:2;
+        padding:0 30px;
+        margin-top: 0
+      
+    }     
+
+
+.things-to-do__section img {
+    width:500px;
+    height: 300px;
+
+}
+
+
+/*--------Places to go--------*/
+        
+#places-to-go{
+    margin-top:20px;
+    padding:10px;
+    margin-bottom: 0;
+   
+
+}
+        
+.places-to-go__sections{
+    margin: auto;
+}
+        
+        
+.places-to-go__sections img{
+     
+    width: 550px;
+}
+
+.places-to-go__text{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+    font-weight: bold;
+
+        }
+}
+
+
+
+
+
+
+/*------small phones to small tablets breakpoint----------*/
+
+ @media screen and (max-width:768px) {
+    
+   
+       
+    .slideShow-container{
+       
+        margin-bottom: 20px;
+    
+    }
+    
+       .slides img {
+        display: block;
+        height: 400px;
+        width: 750px;
+        vertical-align: bottom;
+        margin:auto;
+} 
+    
+    .prev{
+        
+        font-size:45px;
+        left:1%;
+    }
+    
+    .next{
+    
+        font-size:45px;
+        right:1%;
+    }
+    
+    
+    .dot {
+    
+    position: relative;
+    display:inline-block;
+    cursor: pointer;
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    background-color:  rgb(128, 82, 21); 
+    text-align: center;
+    transition: .6s ease;
+    left:45%;
+    
+}
+   
+.active,
+.dot:hover{
+    background-color: #ffd50d;
+}
+    
+        
+    
+/* ---------navigation bar and logo --------- */
+    
+        .nav-btn > label{
+            
+            display:block;
+            float:right;
+            height:30px;
+            width:30px;
+            padding:5px;
+            
+
+    }
+    
+     .nav-btn > label > span{
+        display:block;
+        float:right;
+        width:30px;
+        height:10px;
+        border-top: 2px solid #fff;
+        
+        
+    }
+  
+      #navbar {
+        
+        display: block;
+        position: absolute;
+        transition: all 0.3s ease-in;
+        top:30px;
+        overflow-y:hidden;
+        padding:0;
+
+    }
+    
+   #navbar > .current{
+       color: #fff; 
+    }
+    
+    #navbar > a {
+        display: block;
+        width:100%;
+       font-size: 15px;
+      
+    }
+    
+   .logo{
+       
+        position:absolute;
+        display:block;
+        float:left;
+        top:0px;
+        left:12px;
+        
+       
+    }
+    
+    .site-logo{
+        font-size: 20px;
+        left:0px;
+        padding-left:0px;
+        
+    }
+     #nav-check:not(:checked) + #navbar{
+         height:0;
+    }
+    
+    #nav-check:checked + #navbar {
+         width:100%;
+         height: 170px;
+         background-color: #805215;
+         z-index: 2;
+         
+    } 
+    
+
+/*-------Sections divider------ */
+        
+        
+        
+.sections-divider{
+         margin-top: 30px;  
+         margin-bottom: 30px;
+    
+            
+}
+        
+/*-------Things To Do--------- */     
+        
+ .things-to-do{
+     padding:0;
+     margin-top: 1px;
+     width:auto;
+}  
+        
+ h2{
+    margin-top: 0;
+        }
+        
+.things-to-do__section{
+    flex-grow: 1 ;
+    flex-shrink: 1;
+    align-content: center;
+    width:auto;
+    padding:20px;
+    margin: 0;
+    
+   
+}
+        
+    .things-to-do__p1,
+     .things-to-do__p2{
+        text-align: justify;
+        line-height: 1.2;
+        margin-top:0;
+        padding:20px;
+        padding-top: 0;
+  
+    
+    }     
+
+
+.things-to-do__section img {
+    width:350px;
+    height: 300px;
+
+}
+
+
+/*--------Places to go--------*/
+        
+#places-to-go{
+    margin-top:20px;
+    padding:10px;
+    margin-bottom: 0;
+   
+
+}
+        
+.places-to-go__sections{
+
+    display: block;
+    margin: auto;
+}
+        
+        
+.places-to-go__sections img{
+     
+    width: 450px;
+}
+
+.places-to-go__text{
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+    font-weight: bold;
+
+        }
+}
+
+
+/*-------Mobile screens landscape and portrait mode-------*/
+
+@media only screen and 
+    (max-width:480px) {
+       
+    .slideShow-container{
+      
+        margin-bottom: 20px;
+    
+    }
+    
+       .slides img {
+        display: block;
+        height: 300px;
+        width: auto;
+        vertical-align: bottom;
+        margin:auto;
+} 
+    
+    .prev{
+        
+        font-size:35px;
+        left:3%;
+    }
+    
+    .next{
+    
+        font-size:35px;
+        right:3%;
+    }
+    
+    
+    .dot {
+    
+    position: relative;
+    display:inline-block;
+    cursor: pointer;
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    background-color:  rgb(128, 82, 21); 
+    text-align: center;
+    transition: .6s ease;
+    left:45%;
+    
+}
+   
+.active,
+.dot:hover{
+    background-color: #ffd50d;
+}
+    
+        
+    
+/* ---------navigation bar and logo --------- */
+    
+        .nav-btn > label{
+            
+            display:block;
+            float:right;
+            height:40px;
+            width:40px;
+            padding:5px;
+           
+            
+
+    }
+    
+     .nav-btn > label > span{
+        display:block;
+        float:right;
+        width:35px;
+        height:10px;
+        border-top: 2px solid #fff;
+         top:10px;
+        
+    }
+  
+      #navbar {
+        
+        display: block;
+        position: absolute;
+        transition: all 0.3s ease-in;
+        top:30px;
+        overflow-y:hidden;
+        padding:0;
+
+    }
+    
+   #navbar > .current{
+       color: #fff; 
+    }
+    
+    #navbar > a {
+        display: block;
+        width:100%;
+       font-size: 15px;
+      
+    }
+    
+   .logo{
+       
+        position:absolute;
+        display:block;
+        float:left;
+        top:0px;
+        left:12px;
+        
+       
+    }
+    
+    .site-logo{
+        font-size: 20px;
+        left:0px;
+        padding-left:0px;
+        
+    }
+     #nav-check:not(:checked) + #navbar{
+         height:0;
+    }
+    
+    #nav-check:checked + #navbar {
+         width:100%;
+         height: 170px;
+         background-color: #805215;
+         z-index: 2;
+         
+    } 
+    
+
+/*-------Sections divider------ */
+        
+        
+        
+.sections-divider{
+         margin-top: 30px;  
+         margin-bottom: 30px;
+    
+            
+}
+        
+/*-------Things To Do--------- */     
+        
+ .things-to-do{
+     padding:0;
+height: auto;
+
+     
+}  
+        
+ h2{
+     
+    margin-top: 0;
+}
+        
+.things-to-do__section{
+    flex-grow: 1 ;
+    align-content: center;
+    width:auto;
+    padding:10px;
+    margin: 0;
+    
+   
+}
+  
+
+        
+.things-to-do__section p{
+   display:none;
+     
+    
+}   
+.things-to-do__btn{
+    
+    
+    margin-top:90px;
+}
+
+   
+.things-to-do__section img {
+    
+    width:300px;
+    height: 200px;
+
+}
+
+
+
+/*--------Places to go--------*/
+        
+#places-to-go{
+    margin-top:20px;
+    padding:10px;
+    margin-bottom: 0;
+   
+
+}
+        
+.places-to-go__sections{
+
+    display: block;
+    margin: auto;
+}
+        
+        
+.places-to-go__sections img{
+     
+    width: 375px;
+    height: 300px;
+}
+
+.places-to-go__text{
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+    font-weight: bold;
+
+        }
+}
+
+
