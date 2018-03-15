@@ -1,8 +1,4 @@
-/*
 
-
-
-*/
 *, 
 *:before, 
 *:after{
@@ -32,6 +28,7 @@ html, body{
     height:70px;
     background: #805215;
     padding: 0;
+    margin-bottom:10px;
     
 }
 
@@ -79,8 +76,6 @@ html, body{
     display:none;
     
 }
-
-
 
 
 
@@ -144,7 +139,7 @@ html, body{
     
     position: absolute;
     cursor: pointer;
-    top: 41%;
+    top: 50%;
     color: #fff;
     font-size: 50px;
     font-weight: bold;
@@ -168,6 +163,8 @@ html, body{
 
 /*add a backgorund hover color to next and prev arrows*/
 /*create animation for each image with opacity less than 1 to see image through*/
+
+
 .next:hover, 
 .prev:hover{
     background-color:rgba(128, 82, 21, .8);
@@ -196,14 +193,11 @@ html, body{
 /*make the two child divs in this section fit the parent section of 'things to do'*/
 
 
-.things-to-do{
+#things-to-do{
     
     position: relative;
     margin-top: 40px;
-    height: 760px;
-    padding:20px;
     width: 100%;
- 
 
   
 }
@@ -220,55 +214,63 @@ h2{
    
 }
 
-/*
-.line-break{
-      display: block;
-      width:100px;
-      border-top: 4px solid #ffd50d; 
-      margin: auto;
-      margin-top: 10px;
-}
-*/
+
 
 .things-to-do__section{
     
     display: flex;
-    margin-top:50px;
+    justify-content: flex-start;
     line-height: 1.7;
     font-size: 16px;
     color:#000;
     font-weight: bold;
     text-align: center;
+    padding:20px;
 }
 
 
 .coffee{
+    margin-top:60px;
     margin-bottom: 60px;
+}
+
+.things-to-do__section1-img{
+    margin-left: 15px;
 }
 
 .dance{
     margin-top: 100px;
+   
 }
 
 .things-to-do__section img {
-    width:450px;
-    height: 250px;
+    
+    width:600px;
+    height: 300px;
 
 }
 
 /*  -----center things-to-do paragraph for better visualization----  */
+
+
 .things-to-do__p1,
 .things-to-do__p2{
-    margin-top: 20px;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
     line-height: 2;
+    text-align: left;
+ 
 }
 
-/*
-.things-to-do__p2 {
-  
-    padding-left:20px;
+
+.things-to-do__p2{
+  padding-left:30px;  
 }
-*/
+
+
+
 
 .things-to-do__btn{
     text-transform: uppercase;
@@ -279,6 +281,10 @@ h2{
     height: 30px;
     margin-top:10px;
 }
+
+
+
+
 
 /*-----places to go---------*/
 
@@ -301,7 +307,8 @@ h2{
 }
 
 .places-to-go__sections img{
-    margin: 10px;
+   width:600px;
+    margin: 30px 0 10px 0;
 }
 
 .places-to-go__section-header{
@@ -311,8 +318,11 @@ h2{
 }
 
 .places-to-go__text{
+    font-size: 18px;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
+    line-height: 2;
+    font-weight: bold;
 
 }
 
@@ -356,7 +366,7 @@ iframe{
     
     display: flex;
     justify-content: space-around;
-/*    background: blue;*/
+
     
     
 
@@ -368,7 +378,6 @@ iframe{
     font-size: 12px;
     margin: auto;
     text-align: center;
-
     font-weight: bold;
     margin-top: 30px;
    
@@ -382,7 +391,8 @@ iframe{
 .fa-github,
 .fa-linkedin{
     
-color:  #fff;
+    color:  #fff;
+    font-size:35px;
     
 }
 
@@ -395,240 +405,3 @@ color:  #fff;
     to {opacity:1}
     
 }
-
-/*-------Mobile screens landscape and portrait mode-------*/
-@media only screen and (min-width:320px)
-
-and (max-width:480px) {
-    
-    .slideShow-container{
-        top:15px;
-        margin-bottom: 30px;
-    
-    }
-    
-    .prev{
-       left:0;
-    }
-    
-    .next{
-        right:0;
-    }
-   
-  
-        .nav-btn > label{
-            
-            display:block;
-            float:right;
-            height:50px;
-            width:50px;
-            padding:5px;
-            
-
-    }
-    
-     .nav-btn > label > span{
-        display:block;
-        float:right;
-        width:40px;
-        height:10px;
-        border-top: 2px solid #fff;
-        
-        
-    }
-  
-      #navbar {
-        
-        display: block;
-        position: absolute;
-        transition: all 0.3s ease-in;
-        top:30px;
-        height: 0px;
-        overflow-y:hidden;
-        padding:0;
-    
-
-    }
-    
-   #navbar > .current{
-       color: #fff; 
-    }
-    
-    #navbar > a {
-        display: block;
-        width:100%;
-      
-      
-    }
-    
-   .logo{
-       
-        position:absolute;
-        display:block;
-        float:left;
-        top:0px;
-        left:12px;
-        
-       
-    }
-    
-    .site-logo{
-        font-size: 20px;
-        left:0px;
-        padding-left:0px;
-        
-    }
-     #nav-check:not(:checked) + #navbar{
-         height:0;
-    }
-    
-    #nav-check:checked + #navbar {
-         width:100%;
-         height: 200px;
-         background-color: #805215;
-         z-index: 2;
-         
-    } 
-
-
-/*Things To Do */
-    
-.things-to-do__section{
-    
-  display:block;
-    margin:auto;
-    
-}
-
-    .coffee{
-        display:none;
-    }
-}
-
-/*------Tablets view----------*/
-
- @media screen and (min-width:768px) and (max-width:1022px){
-    
-    .prev{
-       left:0;
-    }
-    
-    .next{
-        right:0;
-    }
-   
-  
-        .nav-btn > label{
-            
-            display:block;
-            float:right;
-            height:50px;
-            width:10px;
-            padding:5px;
-    
-    }
-    
-     .nav-btn > label > span{
-        display:block;
-        float:right;
-        width:40px;
-        height:10px;
-        border-top: 2px solid #fff;
-        
-        
-    }
-  
-      #navbar {
-        
-        display: block;
-        position: absolute;
-        transition: all 0.3s ease-in;
-        top:30px;
-        height: 0px;
-        overflow-y:hidden;
-        padding:0;
-    
-
-    }
-    
-   #navbar > .current{
-       color: #fff; 
-    }
-    
-    #navbar > a {
-        display: block;
-        width:50%;
-      
-      
-    }
-    
-   .logo{
-       
-        position:absolute;
-        display:block;
-        float:left;
-        top:0px;
-        left:10px;
-       
-    }
-    
-    .site-logo{
-        font-size: 25px;
-        left:0px;
-        padding-left:0px;
-        
-    }
-     #nav-check:not(:checked) + #navbar{
-         height:0;
-    }
-    
-    #nav-check:checked + #navbar {
-         width:100%;
-         height: 200px;
-         background-color: #805215;
-         z-index: 2;
-         
-    } 
-     
-     
-/*Things To Do */
-     
-     
-     .things-to-do{
-         height: auto;
-         margin-top:0;
-
-     }
-     
-    
-     .things-to-do__p1,
-     .things-to-do__p2{
-         
-        margin-top: 0;
-        line-height: 1.5;
-}
-     
-     .coffee,
-     .dance {
-         display:block;
-         margin: auto;             
-     }
-     
-     .things-to-do__p1{
-         margin-bottom: 30px;
-     }
-     
-
-
-/*Place To Go*/
-     #places-to-go{
-         margin-top:60px;
-     }
-     
-     .places-to-go__sections{
-        
-         display: block;
-         margin:20px;
-     }
-
-  }

@@ -1,23 +1,76 @@
+
+
 /* --------------for small tablet to big tablet-------- */
 
 
 @media only screen and 
     (max-width:1200px) {
-    
+        
+    .slides img {
+        display: block;
+        height: 400px;
+        width: 750px;
+        vertical-align: bottom;
+        margin:auto;
+}
   
     .prev{
         
-        
-        left:7%;
+        top:40%;
+        left:1%;
     }
     
     .next{
     
-       
-        right:7%;
+        top:40%;
+        right:1%;
     }
          
-
+/* ---------navigation bar and logo --------- */
+    
+    .site-navbar{
+        
+    position:relative;
+    display: block;
+    height:60px;
+    background: #805215;
+    padding: 0;
+    margin-bottom:10px;
+    
+}
+    
+     
+    
+   #navbar > .current{
+       color: #fff; 
+    }
+    
+    #navbar > a {
+       
+        width:100%;
+       font-size: 15px;
+      
+    }
+    
+   .logo{
+       
+        position:absolute;
+        display:block;
+        float:left;
+        top:10px;
+        left:12px;
+        
+       
+    }
+    
+    .site-logo{
+        font-size: 30px;
+        left:0px;
+        padding-left:0px;
+        
+    }
+    
+    
 /*-------Sections divider------ */
         
         
@@ -32,45 +85,52 @@
         
 /*-------Things To Do--------- */     
         
- .things-to-do{
-     padding:20px;
-    margin-top: 0;
+ #things-to-do{
+     padding:10px;
+     margin-top: 0;
      margin-bottom: 60px;
 } 
       
         
 .things-to-do__section{
-    flex-grow: 1 ;
-    flex-shrink: 1;
-    align-content: center;
-    width:auto;
+
+   
     padding:20px;
     margin: 0;
     
    
 }
         
-    .things-to-do__p1,
-     .things-to-do__p2{
-         
-        text-align: justify;
-        line-height:2;
-        padding:0 30px;
-        margin-top: 0
-      
-    }     
+.things-to-do__p1,
+.things-to-do__p2{
+    
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    margin-top: 0;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 30px;
 
-
-.things-to-do__section img {
-    width:500px;
-    height: 300px;
-
+    
 }
-
+        
+.things-to-do__p1{
+    padding-left:0;
+    
+}
+        
+.things-to-do__section img{
+    width:400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
 
 /*--------Places to go--------*/
         
 #places-to-go{
+  
     margin-top:20px;
     padding:10px;
     margin-bottom: 0;
@@ -85,14 +145,17 @@
         
 .places-to-go__sections img{
      
-    width: 550px;
+    width: 375px;
+    height: 350px;
+    
 }
+        
 
 .places-to-go__text{
     font-size: 15px;
     text-align: center;
-    padding: 20px;
-    line-height: 2;
+    padding: 10px;
+    line-height: 1.5;
     font-weight: bold;
 
         }
@@ -105,7 +168,7 @@
 
 /*------small phones to small tablets breakpoint----------*/
 
- @media screen and (max-width:768px) {
+ @media only screen and (max-width:768px) {
     
    
        
@@ -246,42 +309,43 @@
         
 /*-------Things To Do--------- */     
         
- .things-to-do{
+ #things-to-do{
+     
+     
      padding:0;
      margin-top: 1px;
-     width:auto;
+     width: 100%;
 }  
         
  h2{
     margin-top: 0;
         }
         
-.things-to-do__section{
-    flex-grow: 1 ;
-    flex-shrink: 1;
-    align-content: center;
-    width:auto;
-    padding:20px;
-    margin: 0;
-    
-   
-}
+
         
-    .things-to-do__p1,
-     .things-to-do__p2{
-        text-align: justify;
-        line-height: 1.2;
-        margin-top:0;
-        padding:20px;
-        padding-top: 0;
+.things-to-do__p1,
+.things-to-do__p2{
+     flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    padding-top: 0;
+    line-height: 1.5;
+    text-align: left;
   
-    
-    }     
+
+    }  
+     
+.things-to-do__p2{
+         padding-left:20px;
+     }
 
 
 .things-to-do__section img {
-    width:350px;
-    height: 300px;
+    width:230px;
+    height: 250px;
+     flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
 
 }
 
@@ -318,6 +382,53 @@
 }
 
 
+
+@media only screen and(max-width:650px){
+        
+/*-------Things To Do--------- */     
+        
+       
+ h2{
+     
+    margin-top: 0;
+}
+        
+
+
+.things-to-do__p1,
+.things-to-do__p2{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    padding-left: 0;
+    line-height: 1.5;
+    text-align: left;
+  
+}
+
+.things-to-do__p2{
+    padding-left:20px;
+}
+
+
+.things-to-do__btn{
+    font-size: 12px;
+    width:50px;
+    height: 17px;
+    margin-top:20px;
+}
+
+
+        
+.things-to-do__section img{
+    width:300px;
+    height: 230px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+
+}
 /*-------Mobile screens landscape and portrait mode-------*/
 
 @media only screen and 
@@ -338,15 +449,15 @@
 } 
     
     .prev{
-        
+        top:45%;
         font-size:35px;
-        left:3%;
+        left:0%;
     }
     
     .next{
     
         font-size:35px;
-        right:3%;
+        right:0%;
     }
     
     
@@ -435,9 +546,11 @@
         padding-left:0px;
         
     }
+        
      #nav-check:not(:checked) + #navbar{
          height:0;
     }
+        
     
     #nav-check:checked + #navbar {
          width:100%;
@@ -461,47 +574,45 @@
         
 /*-------Things To Do--------- */     
         
- .things-to-do{
-     padding:0;
-height: auto;
-
-     
-}  
-        
+       
  h2{
      
     margin-top: 0;
 }
         
-.things-to-do__section{
-    flex-grow: 1 ;
-    align-content: center;
-    width:auto;
-    padding:10px;
-    margin: 0;
-    
-   
-}
+
+
+.things-to-do__p1,
+.things-to-do__p2{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    padding-left: 0;
+    line-height: 1.5;
+    text-align: left;
   
+}
+
+.things-to-do__p2{
+    padding-left:20px;
+}
+
+
+.things-to-do__btn{
+    font-size: 12px;
+    width:50px;
+    height: 17px;
+    margin-top:20px;
+}
+
 
         
-.things-to-do__section p{
-   display:none;
-     
-    
-}   
-.things-to-do__btn{
-    
-    
-    margin-top:90px;
-}
-
-   
-.things-to-do__section img {
-    
-    width:300px;
-    height: 200px;
-
+.things-to-do__section img{
+    width:200px;
+    height: 230px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis:50%;
 }
 
 
