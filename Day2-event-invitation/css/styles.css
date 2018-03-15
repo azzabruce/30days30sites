@@ -107,7 +107,7 @@ a:hover{
 
 {
     background-attachment: fixed;
-    background-image: /*-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(40,180,133,0.8)))*/-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(255, 0, 0, .8))), url(ian.jpg);
+    background-image: /*-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(40,180,133,0.8)))*/-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(255, 0, 0, .8))), url(../images/ian.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -222,7 +222,7 @@ h3{
     
 }
 .bg-img1{
-    background-image: url(ian-prodigy.jpg);
+    background-image: url(../images/ian-prodigy.jpg);
     min-height: 100%;
 }
 .bg-img2{
@@ -230,7 +230,7 @@ h3{
     min-height: 400px;
 }
 .bg-img3{
-    background-image: url(ian-sis.jpg);
+    background-image: url(../images/ian-sis.jpg);
     min-height: 600px;
 }
 
@@ -240,7 +240,7 @@ h3{
 .form-container {   
     
     display:block;
-    background:-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(255, 0, 0, .8))), url(ian-3yrs.jpg);
+    background:-webkit-gradient(linear, left top, right bottom, from(rgba(123, 151, 183,0.8)), to(rgba(255, 0, 0, .8))), url(../images/ian-3yrs.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
