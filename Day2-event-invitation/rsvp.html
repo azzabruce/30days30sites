@@ -7,10 +7,10 @@
         <meta name="author" content="azza bruce">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
         <title>Ian's Birthday Party</title>
-        <link rel="shortcut icon" type="image/x-icon" href="pokmanball.jpg">
-        <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/pokmanball.jpg">
+        <link href="https://fonts.googleapis.com/css?family=Risque|Josefin+Slab" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
@@ -23,7 +23,39 @@
                     <a href="rsvp.html" class="navbar__section-links current">RSVP</a>
             </div>
         </div>
+        <div class="form-container">
+           
+            <form>
+                 <h3>Count us in!!!</h3>
+                <label for="Pname">Parent's Name</label>
+                <input type="text" id="Pname" name="name" placeholder="Parnet's Name">
+                <label for="ChName">Child's Name</label>
+                <input type="text" id="ChName" name="name" placeholder="Child's name">
+                <label for="rsvp">RSVP</label>
+                <select id="rsvp" name="rsvp">
+                <option value="Yes">Yes</option>
+                <option value="Maybe">Maybe</option>
+                <option value="No">No</option>
+                </select>
+                <label for="numberOfAdults">How Many Adults</label>
+                <select id="numberOfAdults" name="numberOfAdults">
+                    <option value="--">--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                </select>
+                 <label for="numberOfChildern">How Many Adults</label>
+                <select id="numberOfChildern" name="numberOfChildern">
+                <option value="--">--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                </select>
+                <input type="submit" value="Submit">
+            
+            </form>
         
+        </div>
       
     </body>
     <footer id="footer">
